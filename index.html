@@ -1,61 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Denis</title>
-    
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Alpine.js CDN -->
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Denis C.Cabral</title>
+  <script src="assets/js/main.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+
+
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">⚡ Denis<span>TechDev</span></div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#field">Field Service</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="social-links-header">
+    <a href="https://facebook.com/seuperfil" target="_blank" class="facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://instagram.com/denis_ccabral" target="_blank" class="instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://linkedin.com/in/denis-c-cabral-a79962156" target="_blank" class="linkedin">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/DenisCCabral" target="_blank" class="github">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+  </header>
 
-    <!-- Top Bar -->
-    <header class="bg-gray-900 text-white p-4 flex justify-between items-center">
-        <div class="text-xl font-bold">DenisCC</div>
-        <nav class="space-x-6">
-            <a href="#home" class="hover:text-yellow-400">Home</a>
-            <a href="#projects" class="hover:text-yellow-400">Projetos</a>
-            <a href="#contact" class="hover:text-yellow-400">Contato</a>
-        </nav>
-    </header>
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Denis C.Cabral | Developer</h1>
+      <h2><span class="highlight"></span></h2>
+      <p>Crio experiências digitais com tecnologia, design e inovação.</p>
+      <a href="#projetos" class="btn">Ver Projetos</a>
+    </div>
+  </section>
 
-    <!-- Hero -->
-    <section id="home" class="h-screen flex flex-col justify-center items-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216');">
-        <h1 class="text-5xl font-bold text-white text-shadow-md mb-4">Olá, eu sou Denis</h1>
-        <p class="text-xl text-white text-shadow-md">Desenvolvedor e criador de experiências digitais</p>
-    </section>
+  <!-- Sobre -->
+  <section id="sobre" class="sobre">
+    <div class="container sobre-container">
+      <div class="sobre-texto">
+      <h2>Sobre Mim</h2>
+      <p>
+        Olá! Denis aqui, seja bem-vindo! Quero compartilhar minhas habilidades com você e já adianto: trabalho com o que amo. Sou capacitado em diagnosticar e resolver problemas em hardware, com foco em software — aquele cara que faz o computador parar de dar dor de cabeça. Tenho noções necessárias e essenciais em infraestrutura de rede, segurança da informação e programação. Estou sempre buscando oportunidades para crescer, aprender e, claro, contribuir. Olá! Denis aqui, seja bem-vindo! Quero compartilhar minhas habilidades com você e já adianto: trabalho com o que amo. Sou capacitado em diagnosticar e resolver problemas em hardware, com foco em software — aquele cara que faz o computador parar de dar dor de cabeça. Tenho noções necessárias e essenciais em infraestrutura de rede, segurança da informação e programação. Estou sempre buscando oportunidades para crescer, aprender e, claro, contribuir.
+      </p>
+      </div>
+      <div class="sobre-imagem">
+      <img src="assets/img/sobredenis.png" class="img-denis">
+    </div>
+    </div>
+  </section>
 
-    <!-- Projetos -->
-    <section id="projects" class="py-20 px-8 bg-gray-100">
-        <h2 class="text-3xl font-bold text-center mb-12">Meus Projetos</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-                <img src="https://via.placeholder.com/300x200" alt="Projeto 1" class="rounded mb-4">
-                <h3 class="text-xl font-semibold mb-2">Projeto 1</h3>
-                <p>Descrição breve do projeto, tecnologias utilizadas e resultados.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-                <img src="https://via.placeholder.com/300x200" alt="Projeto 2" class="rounded mb-4">
-                <h3 class="text-xl font-semibold mb-2">Projeto 2</h3>
-                <p>Descrição breve do projeto, tecnologias utilizadas e resultados.</p>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-                <img src="https://via.placeholder.com/300x200" alt="Projeto 3" class="rounded mb-4">
-                <h3 class="text-xl font-semibold mb-2">Projeto 3</h3>
-                <p>Descrição breve do projeto, tecnologias utilizadas e resultados.</p>
-            </div>
+  <!-- Skills -->
+  <section id="skills" class="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li><i class="fa-solid fa-robot"></i> Inteligência Artificial</li>
+      <li><i class="fa-brands fa-html5"></i> HTML5</li>
+      <li><i class="fa-brands fa-css3"></i> CSS3</li>
+      <li><i class="fa-brands fa-js"></i> JavaScript</li>            
+      <li><i class="fa-brands fa-php"></i> PHP</li>
+
+      <li><i class="fa-brands fa-react"></i> React</li>
+      <li><i class="devicon-tailwindcss-plain"></i> Tailwind CSS</li>
+      <li><i class="fa-brands fa-wordpress"></i> WordPress</li>
+      <li><i class="devicon-bootstrap-plain"></i> Bootstrap</li>
+
+      <li><i class="fa-brands fa-node"></i> Node.js</li>
+      <li><i class="devicon-mysql-plain"></i> MySQL</li>
+      <li><i class="fa-solid fa-leaf"></i> MongoDB</li>
+      <li><i class="devicon-supabase-plain"></i>Supabase</li>
+      <li><i class="fa-solid fa-fire"></i> Firebase</li>
+      
+      <li><i class="fa-brands fa-git-alt"></i> Git</li>
+      <li><i class="fa-brands fa-github"></i> Github</li>
+      <li><i class="fa-solid fa-paintbrush"></i> UI/UX Design</li>
+    </ul>
+  </div>
+</section>
+
+  <section id="field" class="field">
+    <div class="container">
+      <h2>Field Service</h2>
+      <ul class="field-list">
+        <li><i class="fa-brands fa-linux fa-2x"></i> Linux</li>
+        <li><i class="fa-brands fa-windows fa-2x"></i> Windows</li>
+        <li><i class="fa-solid fa-network-wired fa-2x"></i> Rede</li>
+        <li><i class="fa-solid fa-print fa-2x"></i> Impressora</li>
+        <li><i class="fa-solid fa-arrows-rotate fa-2x"></i> Rollout</li>
+        <li><i class="fa-solid fa-globe fa-2x"></i> Internet Protocol</li>
+        <li><i class="fa-solid fa-desktop fa-2x"></i> Hardware</li>
+        <li><i class="fa-solid fa-laptop-code fa-2x"></i>Software</li>
+      </ul>
+    </div>
+  </section>
+  <!-- Projetos -->
+  <section id="projetos" class="projetos">
+    <div class="container">
+      <h2>Projetos</h2>
+      <div class="projetos-grid">
+        <div class="projeto-card">
+          <h3>Sobweb</h3>
+          <p>Co-Fundador empresa makerying Digital</p>
         </div>
-    </section>
+        <div class="projeto-card">
+          <h3>Projeto 2</h3>
+          <p>Descrição curta do projeto. Layout criativo e responsivo.</p>
+        </div>
+        <div class="projeto-card">
+          <h3>Projeto 3</h3>
+          <p>Descrição curta do projeto. Foco em inovação digital.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contato -->
-    <section id="contact" class="py-20 px-8 bg-gray-900 text-white text-center">
-        <h2 class="text-3xl font-bold mb-4">Contato</h2>
-        <p class="mb-4">Entre em contato comigo via <a href="mailto:denis@example.com" class="text-yellow-400 font-semibold hover:text-yellow-200">email</a></p>
-    </section>
+  <!-- Contato -->
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <form class="contato-form">
+        <input type="text" placeholder="Nome" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Mensagem" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
 
+  <div class="social-links">
+    <a href="https://facebook.com/seuperfil" target="_blank" class="facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://instagram.com/denis_ccabral" target="_blank" class="instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://linkedin.com/in/denis-c-cabral-a79962156" target="_blank" class="linkedin">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/DenisCCabral" target="_blank" class="github">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© 2025 DenisDev. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>

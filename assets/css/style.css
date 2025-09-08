@@ -28,16 +28,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 40px;
+  padding: 20px 40px;
   border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 .logo {
   position: absolute;
   left: 10px;
-  font-size: 24px;
+  font-size: 25px;
   color: #00f5ff;
   font-weight: 700;
+  
 }
 .logo span {
   color: #7b61ff;
@@ -80,6 +81,7 @@ body {
   list-style: none;
 }
 .nav ul li a {
+  font-size: 18px;
   text-decoration: none;
   color: #9aa6b2;
   padding: 6px 12px;
@@ -163,13 +165,40 @@ body {
    HERO
 ========================= */
 .hero {
-  height: 100vh;
+  width: 100%; /* ocupa 100% da largura */
+  height: 100vh; /* ocupa 100% da altura da tela */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(135deg, rgba(0,245,255,0.05), rgba(123,97,255,0.05));
+  
   padding-top: 60px;
+  overflow: hidden;
+
+}
+
+/* Vídeo ocupando toda a seção */
+#hero-video {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -3; /* deixa atrás do conteúdo */
+  transform: translate(-50%, -50%);
+  object-fit: cover; /* corta se necessário para preencher */
+}
+
+/* Conteúdo acima do vídeo */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  top: 20%;
+  transform: translateY(-50%);
 }
 .hero-content h1 {
   font-size: 48px;
@@ -177,6 +206,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 15px;
+   
 }
 .hero-content p {
   font-size: 18px;
@@ -268,8 +298,12 @@ h2 {
   color: #7b61ff;
   font-weight: 500;
   transition: all 0.2s ease;
-  gap: 0px; /* espaço entre ícone e texto */
+  gap: 10px; /* espaço entre ícone e texto */
   font-size: 20px;
+  width: 350px;      /* largura fixa da caixa */
+  height: 140px;     /* altura fixa da caixa */
+  box-sizing: border-box; /* garante que padding não aumente a largura/altura */
+  text-align: center; /* centraliza o texto */
 }
 .skills-list li:hover {
   background: rgba(0,245,255,0.15);
@@ -298,8 +332,12 @@ h2 {
   color: #7b61ff;
   font-weight: 500;
   transition: all 0.2s ease;
-  gap: 0px; /* espaço entre ícone e texto */
+  gap: 10px; /* espaço entre ícone e texto */
   font-size: 20px;
+  width: 350px;      /* largura fixa da caixa */
+  height: 140px;     /* altura fixa da caixa */
+  box-sizing: border-box; /* garante que padding não aumente a largura/altura */
+  text-align: center; /* centraliza o texto */
 }
 .field-list li:hover {
   background: rgba(0,245,255,0.15);
